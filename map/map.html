@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="head">
+                <div class="container container__specific">
+                    <div class="head__container">
+                        <div class="head__control">
+                            <div class="head__menu-box" id="modalButton">
+                                <a class="head__menu-link" href="#">
+                                    <img src="../image/head__menu-icon.svg" alt="menu">
+                                </a>
+                            </div>
+                            <div class="head__location">
+                                <a class="head__location-link">
+                                    <img src="../image/head__location-icon.svg" alt="location">
+                                </a>
+                            </div>
+                            <div class="head__phone">
+                                <a class="head__phone-link">
+                                    <img src="../image/head__phone-icon.svg" alt="phone">
+                                </a>
+                            </div>
+                            <div class="head__bin-mobile">
+                                <a class="head__bin-link">
+                                    <img src="../image/head__bin-icon.svg" alt="bin">
+                                </a>
+                            </div>
+                            <p class="head__text">8 981 120-11-17</p>
+                        </div>
+                        <div class="logo">
+                            <a class="logo__link">
+                                <img class="logo__image" src="../image/logo.svg" alt="logo">
+                                <img class="logo__image-mobile" src="../image/logo__mobile.svg" alt="logo">
+                            </a>
+                        </div>
+                        <div class="head__info">
+                            <div class="head__bin">
+                                <a class="head__bin-link">
+                                    <img src="../image/head__bin-icon.svg" alt="bin">
+                                </a>
+                            </div>
+                            <div class="head__message">
+                                <a class="head__message-link">
+                                    <img src="../image/head__message-icon.svg" alt="message">
+                                </a>
+                            </div>
+                            <div class="head__search">
+                                <a class="head__search-link">
+                                    <img src="../image/head__search-icon.svg" alt="search">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="map">
+                <div class="map__top">
+                    <h1 class="map__title">Карта</h1>
+                </div>
+                <div class="map__bottom">
+                    <div class="container">
+                        <div class="map__categories">
+                            <form class="map__form">
+                                <label for="country"></label>
+                                <input class="map__input" id="country" placeholder="Страна, город, улица...">
+                            </form>
+                            <ul class="map-services__list">
+                                <li class="map-services__item map-services__item-start">
+                                    <img src="image/map__knives-icon.svg" alt="knives">
+                                </li>
+                                <li class="map-services__item map-services__item_active">
+                                    <img src="image/map__cutlery-icon.svg" alt="cutlery">
+                                </li>
+                                <li class="map-services__item">
+                                    <img src="image/map__knife-icon.svg" alt="knife">
+                                </li>
+                                <li class="map-services__item">
+                                    <img src="image/map__backsword-icon.svg" alt="backsword">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="map__content">
+                            <div class="map__wrapper-image">
+                                <img class="map__image" src="image/map__image.jpg" alt="map" width="960" height="771">
+                                <img class="map__image map__image-tablet" src="image/map__image-tablet.jpg" alt="map" width="738" height="531">
+                                <img class="map__image map__image-mobile" src="image/map__image-mobile.jpg" alt="map" width="290" height="291">
+                            </div>
+                            <div class="map__information">
+                                <button class="map__button">Найти ближайший</button>
+                                    <!--Слайдер-->
+                                <div class="swiper map__location">
+                                    <div class="swiper-wrapper">
+                                        <div class="map__box swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+
+                                  <!--Tablet-слайдер-->
+                                <div class="swiper map__location-tablet">
+                                    <div class="swiper-wrapper">
+                                        <div class="map__box swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box map__box_last swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box map__box_last swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box map__box_last swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                        <div class="map__box map__box_last swiper-slide">
+                                            <div class="map__name">ТРЦ «АФИМОЛЛ Сити»</div>
+                                            <div class="map__place">г. Москва, Пресненская набережная, д. 2, этаж 1</div>
+                                            <div class="map__time">вск-чт с 10:00 до 22:00. пт-сб с 10:00 до 23:00</div>
+                                            <div class="map__phone">+7 (968) 999-07-77</div>
+                                            <div class="map__route">Проложить маршрут</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quality">
+                <div class="container container__specific-tablet">
+                    <div class="quality__container">
+                        <img class="quality__image quality__image-silver" src="image/quality__image-silver.jpg" alt="knives" width="630" height="635">
+                        <img class="quality__image quality__image-silver-tablet" src="image/quality__image-silver-tablet.jpg" alt="knives" width="300" height="302">
+                        <img class="quality__image quality__image-silver-mobile" src="image/quality__image-silver-mobile.jpg" alt="knives" width="290" height="292">
+                        <div class="quality__wrapper quality__wrapper-prev">
+                            <div class="quality__title title">Исключительное качество без компромиссов</div>
+                            <div class="quality__text">Ножи «Tuotown» — это главный инструмент поваров и секрет кулинарного мастерства</div>
+                        </div>
+                        <img class="quality__image quality__image-black" src="image/quality__image-black.jpg" alt="knives" width="630" height="635">
+                        <img class="quality__image quality__image-black-tablet" src="image/quality__image-black-tablet.jpg" alt="knives" width="300" height="302">
+                        <img class="quality__image quality__image-black-mobile" src="image/quality__image-black-mobile.jpg" alt="knives" width="290" height="292">
+                        <div class="quality__wrapper quality__wrapper-next">
+                            <div class="quality__title title">Исключительное качество без компромиссов</div>
+                            <div class="quality__text">Ножи «Tuotown» — это главный инструмент поваров и секрет кулинарного мастерства</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="form-refer">
+                <div class="container">
+                    <div class="form-refer__title title">Узнавайте первым о новинках и новостях</div>
+                    <div class="form-refer__wrapper">
+                        <label class="form-refer__label" for="mail"></label>
+                        <input class="form-refer__input" id="mail" type="email" placeholder="Ваш e-mail">
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="basement">
+                <div class="basement__container-top">
+                    <div class="container">
+                        <div class="basement__declaration">
+                            <div class="basement__history">
+                                <div class="basement__logo">
+                                    <a class="basement__link-logo" href="#">
+                                        <img class="basement__logo-icon" src="../image/basement__logo-icon.svg" alt="logo">
+                                        <img class="basement__logo-icon-mobile" src="../image/basement__logo-icon-mobile.svg" alt="logo">
+                                    </a>
+                                    <div class="basement__title-logo basement__title">легендарные ножи, создающие шедевры</div>
+                                </div>
+                                <div class="basement__text basement__text-top text">
+                                    Компания «Tuotown» – эксклюзивный представитель профессиональных кухонных ножей, изготовленных лучшими мастерами Восточной Азии с применением передового европейского оборудования и современных материалов.
+                                </div>
+                                <div class="basement__text text">
+                                    Они отличаются идеальным балансом и фантастической остротой. Сочетают в себе вековые традиции и новейшие разработки. Также предлагаем широкий ассортимент сопутствующих товаров.
+                                </div>
+                            </div>
+                            <div class="basement__content">
+                                <nav class="basement__menu-info">
+                                    <div class="basement__title-info basement__title">Информация</div>
+                                    <ul class="basement__list-info">
+                                        <li class="basement__item-info">
+                                            <a class="basement__link-info" href="#">Главная</a>
+                                        </li>
+                                        <li class="basement__item-info">
+                                            <a class="basement__link-info" href="#">Новости</a>
+                                        </li>
+                                        <li class="basement__item-info">
+                                            <a class="basement__link-info" href="#">О компании</a>
+                                        </li>
+                                        <li class="basement__item-info">
+                                            <a class="basement__link-info" href="#">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <nav class="basement__menu-catalog">
+                                    <div class="basement__title-catalog basement__title">Каталог</div>
+                                    <ul class="basement__list-catalog">
+                                        <li class="basement__item-catalog">
+                                            <a class="basement__link-catalog" href="#">Кухонные ножи</a>
+                                        </li>
+                                        <li class="basement__item-catalog">
+                                            <a class="basement__link-catalog" href="#">Складные ножи</a>
+                                        </li>
+                                        <li class="basement__item-catalog">
+                                            <a class="basement__link-catalog" href="#">Точилки для ножей</a>
+                                        </li>
+                                        <li class="basement__item-catalog">
+                                            <a class="basement__link-catalog" href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="basement_social">
+                                    <div class="basement__title-social basement__title">Мы в соцсетях</div>
+                                    <div class="basement__wrapper-social">
+                                        <a class="basement__link-social" href="#">
+                                            <img class="basement__icon" src="../image/basement__facebook-icon.svg" alt="facebook">
+                                        </a>
+                                        <a class="basement__link-social" href="#">
+                                            <img class="basement__icon" src="../image/basement__vk-icon.svg" alt="vk">
+                                        </a>
+                                        <a class="basement__link-social" href="#">
+                                            <img class="basement__icon" src="../image/basement__instagram-icon.svg" alt="instagram">
+                                        </a>
+                                        <a class="basement__link-social" href="#">
+                                            <img class="basement__icon" src="../image/basement__youtube-icon.svg" alt="youtube">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basement__contact-info">
+                                <div class="basement__title-contact-info basement__title">Контактная информация</div>
+                                <div class="basement__phone basement__title">+7 (981) 120-11-17</div>
+                                <div class="basement__email text">tuotown@mail.ru</div>
+                                <div class="basement__time text">08:00 — 18:00, ежедневно</div>
+                                <div class="basement__location text">Россия, Москва, МКАД, 19-й километр,
+                                    вл20с1, вход Ф, 22-68-70</div>
+                                <a class="basement__link-icon" href="#">
+                                    <img src="../image/basement__link-icon.svg" alt="link">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basement__container-bottom">
+                    <div class="container">
+                        <div class="basement__privacy">
+                            <div class="basement__text-privacy text">TUOTOWN © 2021 Торговая марка TUOTOWN зарегистрирована. Все права защищены и принадлежат правообладателям.</div>
+                            <div class="basement__logo-privacy">
+                                <a class="basement__link-logo-privacy" href="#">
+                                    <img src="../image/basement__logo-privacy.svg" alt="logo-privacy">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--        Модальное окно в header-->
+        <div class="modal" id="modal">
+            <div class="modal__curtain" id="modalCurtain"></div>
+            <div class="modal__container">
+                <div class="modal__wrapper">
+                    <div class="modal__close" id="modalClose">
+                        <img src="../image/modal__close-icon.svg" alt="back">
+                    </div>
+                    <div class="modal__container-icons">
+                        <div class="modal__message">
+                            <a class="modal__message-link">
+                                <img src="../image/head__message-icon.svg" alt="message">
+                            </a>
+                        </div>
+                        <div class="modal__search">
+                            <a class="modal__search-link">
+                                <img src="../image/head__search-icon.svg" alt="search">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="modal__nav">
+                    <ul class="modal__list-knives">
+                        <li class="modal__item-knives">
+                            <a class="modal__link-knives" href="#">Кухонные ножи TUOTOWN</a>
+                        </li>
+                        <li class="modal__item-knives">
+                            <a class="modal__link-knives" href="#">Складные ножи TUOTOWN</a>
+                        </li>
+                        <li class="modal__item-knives">
+                            <a class="modal__link-knives" href="#">Кухонные ножи QXF</a>
+                        </li>
+                        <li class="modal__item-knives">
+                            <a class="modal__link-knives" href="#">Точильные камни</a>
+                        </li>
+                        <li class="modal__item-knives">
+                            <a class="modal__link-knives" href="#">Наборы для BBQ</a>
+                        </li>
+                        <li class="modal__item-knives">
+                            <a class="modal__link-knives" href="#">Кухонные принадлежности</a>
+                        </li>
+                        <li class="modal__item-knives">
+                            <a class="modal__link-knives" href="#">Туристические товары</a>
+                        </li>
+                    </ul>
+                    <ul class="modal__list-info">
+                        <li class="modal__item-info">
+                            <a class="modal__link-info" href="#">Новости</a>
+                        </li>
+                        <li class="modal__item-info">
+                            <a class="modal__link-info" href="#">О компании</a>
+                        </li>
+                        <li class="modal__item-info">
+                            <a class="modal__link-info" href="#">Контакты</a>
+                        </li>
+                        <li class="modal__item-info">
+                            <a class="modal__link-info" href="#">Как проехать</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
